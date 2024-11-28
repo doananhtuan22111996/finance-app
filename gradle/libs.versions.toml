@@ -1,0 +1,36 @@
+[versions]
+corePlugins = "1.0.1"
+coreDomain = "1.0.0"
+coreData = "1.0.0"
+coreCompose = "1.0.0"
+
+financeTheme = "1.0.1"
+financeNavigation = "1.0.2"
+financeLaunch = "1.0.1"
+financeOnboarding = "1.0.1"
+
+provideNetworking = "1.0.0"
+
+financeHome = "1.0.2"
+financeAuthentication = "1.0.2"
+
+[libraries]
+corePlugins = { group = "vn.core.libs", name = "plugins", version.ref = "corePlugins" }
+coreDomain = { group = "vn.core.libs", name = "domain", version.ref = "coreDomain" }
+coreData = { group = "vn.core.libs", name = "data", version.ref = "coreData" }
+coreCompose = { group = "vn.core.libs", name = "compose", version.ref = "coreCompose" }
+
+provideNetworking = { group = "vn.core.provider", name = "finance-networking", version.ref = "provideNetworking" }
+
+financeTheme = { group = "vn.finance.libs", name = "theme", version.ref = "financeTheme" }
+financeLaunch = { group = "vn.finance.libs", name = "feature-launch", version.ref = "financeLaunch" }
+financeNavigation = { group = "vn.finance.libs", name = "navigation", version.ref = "financeNavigation" }
+financeOnboarding = { group = "vn.finance.libs", name = "feature-onboarding", version.ref = "financeOnboarding" }
+
+financeAuthenticationPresentation = { group = "vn.finance.libs", name = "feature-authentication-presentation", version.ref = "financeAuthentication" }
+financeAuthenticationBusiness = { group = "vn.finance.libs", name = "feature-authentication-business", version.ref = "financeAuthentication" }
+
+financeHomePresentation = { group = "vn.finance.libs", name = "feature-home-presentation", version.ref = "financeHome" }
+financeHomeBusiness = { group = "vn.finance.libs", name = "feature-home-business", version.ref = "financeHome" }
+
+[plugins]
