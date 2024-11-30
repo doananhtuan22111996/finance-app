@@ -18,7 +18,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url =  uri("https://jitpack.io") }
+        maven { url = uri("https://jitpack.io") }
         maven {
             val ghUsername = System.getenv("GH_USERNAME") ?: getLocalProperty("GH_USERNAME")
             val ghPassword = System.getenv("GH_TOKEN") ?: getLocalProperty("GH_TOKEN")
@@ -30,11 +30,8 @@ dependencyResolutionManagement {
         }
     }
     versionCatalogs {
-        create("libs") {
-            from("vn.core.libx:versions:1.0.3")
-        }
-        create("fnlibs") {
-            from(files("gradle/finance.versions.toml"))
+        create("mobilex") {
+            from("vn.core.libs:versions:1.0.1")
         }
     }
 }
