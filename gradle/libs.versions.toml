@@ -3,16 +3,14 @@ corePlugins = "1.0.1"
 coreDomain = "1.0.0"
 coreData = "1.0.0"
 coreCompose = "1.0.0"
-
-financeTheme = "1.0.1"
-financeNavigation = "1.0.2"
-financeLaunch = "1.0.1"
-financeOnboarding = "1.0.1"
-
 provideNetworking = "1.0.0"
 
-financeHome = "1.0.2"
-financeAuthentication = "1.0.2"
+financeTheme = "1.0.1"
+financeLaunch = "1.0.1"
+financeOnboarding = "1.0.2"
+financeHome = "1.0.3"
+financeAuthentication = "1.0.3"
+financeStatistic = "1.0.1"
 
 [libraries]
 corePlugins = { group = "vn.core.libs", name = "plugins", version.ref = "corePlugins" }
@@ -24,13 +22,19 @@ provideNetworking = { group = "vn.core.provider", name = "finance-networking", v
 
 financeTheme = { group = "vn.finance.libs", name = "theme", version.ref = "financeTheme" }
 financeLaunch = { group = "vn.finance.libs", name = "feature-launch", version.ref = "financeLaunch" }
-financeNavigation = { group = "vn.finance.libs", name = "navigation", version.ref = "financeNavigation" }
+
 financeOnboarding = { group = "vn.finance.libs", name = "feature-onboarding", version.ref = "financeOnboarding" }
+financeOnboardingApi = { group = "vn.finance.libs", name = "feature-onboarding-api", version.ref = "financeOnboarding" }
 
 financeAuthenticationPresentation = { group = "vn.finance.libs", name = "feature-authentication-presentation", version.ref = "financeAuthentication" }
 financeAuthenticationBusiness = { group = "vn.finance.libs", name = "feature-authentication-business", version.ref = "financeAuthentication" }
+financeAuthenticationApi = { group = "vn.finance.libs", name = "feature-authentication-api", version.ref = "financeAuthentication" }
 
 financeHomePresentation = { group = "vn.finance.libs", name = "feature-home-presentation", version.ref = "financeHome" }
 financeHomeBusiness = { group = "vn.finance.libs", name = "feature-home-business", version.ref = "financeHome" }
+financeHomeApi = { group = "vn.finance.libs", name = "feature-home-api", version.ref = "financeHome" }
+
+financeStatisticPresentation = { group = "vn.finance.libs", name = "feature-statistic-presentation", version.ref = "financeStatistic" }
+financeStatisticBusiness = { group = "vn.finance.libs", name = "feature-statistic-business", version.ref = "financeStatistic" }
 
 [plugins]

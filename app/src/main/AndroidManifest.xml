@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name="vn.finance.onboarding.OnboardingActivity"
+            android:name=".FinanceActivity"
             android:exported="true"
             android:theme="@style/AppTheme.SplashScreen">
             <intent-filter>
@@ -27,15 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="finance.authentication.presentation.AuthenticationActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-
-        <activity
-            android:name="finance.home.presentation.HomeActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
