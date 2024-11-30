@@ -21,13 +21,23 @@ dependencies {
 
     implementation(libs.financeTheme)
     implementation(libs.financeLaunch)
-    implementation(libs.financeNavigation)
-    implementation(libs.financeOnboarding)
     implementation(libs.provideNetworking)
 
+    // Onboarding
+    implementation(libs.financeOnboarding)
+    implementation(libs.financeOnboardingApi)
+
+    // Authentication
     implementation(libs.financeAuthenticationPresentation)
     implementation(libs.financeAuthenticationBusiness)
+    implementation(libs.financeAuthenticationApi)
 
+    // Home
     implementation(libs.financeHomePresentation)
     implementation(libs.financeHomeBusiness)
+    implementation(libs.financeHomeApi)
+
+    // Statistic
+    implementation(libs.financeStatisticPresentation)
+    implementation(libs.financeStatisticBusiness)
 }
