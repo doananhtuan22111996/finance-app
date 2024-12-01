@@ -5,12 +5,12 @@ coreData = "1.0.0"
 coreCompose = "1.0.0"
 provideNetworking = "1.0.0"
 
-financeTheme = "1.0.1"
-financeLaunch = "1.0.1"
-financeOnboarding = "1.0.2"
-financeHome = "1.0.3"
+financeTheme = "1.0.2"
+financeLaunch = "1.0.2"
+financeOnboarding = "1.0.3"
+financeHome = "1.0.4"
 financeAuthentication = "1.0.3"
-financeStatistic = "1.0.1"
+financeStatistic = "1.0.2"
 
 [libraries]
 corePlugins = { group = "vn.core.libs", name = "plugins", version.ref = "corePlugins" }
