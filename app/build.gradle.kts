@@ -40,4 +40,8 @@ dependencies {
     // Statistic
     implementation(libs.financeStatisticPresentation)
     implementation(libs.financeStatisticBusiness)
+
+    // Profile
+    implementation(libs.financeProfilePresentation)
+    implementation(libs.financeProfileBusiness)
 }
