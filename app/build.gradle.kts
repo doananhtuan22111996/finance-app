@@ -44,4 +44,9 @@ dependencies {
     // Profile
     implementation(libs.financeProfilePresentation)
     implementation(libs.financeProfileBusiness)
+
+    // Setting
+    implementation(libs.financeSettingPresentation)
+    implementation(libs.financeSettingBusiness)
+    implementation(libs.financeSettingApi)
 }
