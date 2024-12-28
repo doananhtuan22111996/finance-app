@@ -49,4 +49,8 @@ dependencies {
     implementation(libs.financeSettingPresentation)
     implementation(libs.financeSettingBusiness)
     implementation(libs.financeSettingApi)
+
+    // Notification
+    implementation(libs.financeNotificationPresentation)
+    implementation(libs.financeNotificationBusiness)
 }
