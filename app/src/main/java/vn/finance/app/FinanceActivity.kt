@@ -53,10 +53,12 @@ class FinanceActivity : ComponentActivity() {
 
     @Composable
     fun FinanceNavHost(navController: NavHostController) {
+        val isLoggedIn by viewModel.isLoggedIn.collectAsStateWithLifecycle()
+
         NavHost(navController = navController, startDestination = onboardingApi.path) {
             composable(onboardingApi.path) {
                 onboardingApi.OnboardingPage(navigateTo = {
-                    navController.navigate(authenticationApi.path) {
+                    navController.navigate(if (isLoggedIn) homeApi.path else authenticationApi.path) {
                         popUpTo(onboardingApi.path) {
                             inclusive = true
                         }
