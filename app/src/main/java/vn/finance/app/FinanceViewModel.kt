@@ -10,8 +10,7 @@ import vn.finance.authentication.api.GetLoggedInProvider
 import javax.inject.Inject
 
 @HiltViewModel
-class FinanceViewModel @Inject constructor(private val getLoggedInProvider: GetLoggedInProvider) :
-    ViewModel() {
+class FinanceViewModel @Inject constructor(private val getLoggedInProvider: GetLoggedInProvider) : ViewModel() {
 
     private val _isDarkMode = MutableStateFlow(false)
     val isDarkMode = _isDarkMode.asStateFlow()
